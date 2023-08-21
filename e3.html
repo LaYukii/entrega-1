@@ -9,51 +9,60 @@
     <header><h1>Formulario de registro</h1></header>
     <main>
       <form>
-        <label for="name"
-          >Nombre: <input type="text" name="name" id="name"
-        /></label>
-        <br /><br />
-        <label for="lastname"
-          >Apellido: <input type="text" name="lastname" id="lastname"
-        /></label>
+        <section>
+          <div>
+            <label for="name"
+              >Nombre: <input type="text" name="name" id="name" required
+            /></label>
+          </div>
+          <br />
+          <div>
+            <label for="lastname"
+              >Apellido:
+              <input type="text" name="lastname" id="lastname" required
+            /></label>
+          </div>
+          <br />
+          <div>
+            <label for="modalidad"
+              >Modalidad de Cursada:
+              <input type="radio" name="option" id="modalidad" required />
+              On-Demand
+              <input type="radio" name="option" id="modalidad" required /> En
+              vivo
+            </label>
+          </div>
+          <br />
+          <div>
+            <label for="email">Correo: </label
+            ><input type="email" name="email" id="email" required />
+          </div>
+          <br />
+          <div>
+            <label for="information">
+              <input type="checkbox" name="information" id="information" />
+              Deseo recibir información sobre nuevos posteos en la plataforma
+              Nucba.</label
+            >
+          </div>
+          <br />
+          <div>
+            <label for="terms-conditions">
+              <input
+                type="checkbox"
+                name="terms-conditions"
+                id="terms-conditions"
+                required
+              />
+              Declaro que lei los terminos y condiciones y estoy listo para
+              convertirme en desarrollador web Full Stack.</label
+            >
+          </div>
+          <br />
+          <input type="submit" value="Enviar" />
+        </section>
       </form>
-      <br />
-      <form>
-        <label for="modalidad"
-          >Modalidad de Cursada:
-          <input type="radio" name="option" id="modalidad" /> On-Demand
-          <input type="radio" name="option" id="modalidad" /> En vivo
-        </label>
-      </form>
-      <br />
-      <form>
-        <label for="email">Correo: </label
-        ><input type="email" name="email" id="email" />
-      </form>
-      <br />
-      <form>
-        <label for="information">
-          <input type="checkbox" name="information" id="information" /> Deseo
-          recibir información sobre nuevos posteos en la plataforma
-          Nucba.</label
-        >
-        <br /><br />
-        <label for="terms-conditions">
-          <input
-            type="checkbox"
-            name="terms-conditions"
-            id="terms-conditions"
-          />
-          Declaro que lei los terminos y condiciones y estoy listo para
-          convertirme en desarrollador web Full Stack.</label
-        >
-      </form>
-      <br />
     </main>
-    <footer>
-      <form>
-        <button type="submit">Enviar</button>
-      </form>
-    </footer>
+    <footer></footer>
   </body>
 </html>
